@@ -4,18 +4,10 @@ services:
   backend:
     container_name: backend2.3
     build: ./backend
-    depends_on:
-      - redis
     ports:
       - 8080:8080
   frontend:
     container_name: frontend2.3
     build: ./frontend
-    depends_on:
-      - backend
     ports:
       - 5001:5000
-  redis:
-    container_name: redis-cache
-    image: redis
-    restart: unless-stopped
