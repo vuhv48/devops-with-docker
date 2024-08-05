@@ -1,0 +1,5 @@
+hoangvanvu@Hoangs-MacBook-Air 1.10 % docker container run -d -p 8080:8080 devopsdockeruh/simple-web-service sh -c "server"
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+a091bc09a4fdb748942a5b9857a29d15cd1328cbceaef73a4a8dbb9376295b0f
+hoangvanvu@Hoangs-MacBook-Air 1.10 % curl localhost:8080
+{"message":"You connected to the following path: /","path":"/"}%    
